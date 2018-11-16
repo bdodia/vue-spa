@@ -1,29 +1,41 @@
 {
-    "questions": [
+    "java": [
       {
         "id": 1,
         "category": "Data Types",
-        "description": "Name the 8 Java primitive types"
+        "question": "Name the 8 Java primitive types",
+        "answer": "..."
       },
       {
         "id": 2,
         "category": "Data Types",
-        "description": "How much data can be stored in an int type?"
+        "question": "How much data can be stored in an int type?",
+        "answer": "..."
+       
       },
       {
         "id": 3,
         "category": "Classes",
-        "description": "Define a skeleton class"
+        "question": "Define a skeleton class",
+        "answer": "..."
       },
       {
         "id": 4,
         "category": "Methods",
-        "description": "What is the signature for the main method in a class?"
+        "question": "What is the signature for the main method in a class?",
+        "answer": "..."
       },
       {
-        "id": 12,
+        "id": 5,
         "category": "Interfaces",
-        "description": "Define what an Interface can be used for"
+        "question": "Define what an Interface can be used for",
+        "answer": "..."
+      },
+      {
+        "id": 5,
+        "category": "Interfaces",
+        "question": "Define what an Interface can be used for",
+        "answer": "..."
       }
     ]
   }
