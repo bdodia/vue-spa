@@ -1,16 +1,15 @@
-import Vue from "vue";
-import Router from "vue-router";
-import HelloWorld from "@/components/HelloWorld";
-import JavaQuestions from "@/components/JavaQuestions";
+import Vue from 'vue'
+import Router from 'vue-router'
+import JavaQuestions from '@/components/JavaQuestions'
 
-Vue.use(Router);
+Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: "/",
-      name: "JavaQuestions",
+      path: '/',
+      name: 'JavaQuestions',
       component: JavaQuestions
     }
   ]
-});
+})

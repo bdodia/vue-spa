@@ -1,34 +1,33 @@
 <template>
   <div>
     <h1>{{title}}</h1>
-    <li v-for="question, i in questions">
-      <div>{{question}}</div>
+    <li v-for="question in questions">
+      <div>{{question.category}}</div>
     </li>
   </div>
 </template>
 
-!<script>
+<script>
 export default {
-  name: "",
+  name: '',
   data() {
     return {
-      title: "Java Questions",
+      title: 'Java Questions',
       questions: []
-    };
+    }
   },
 
   methods: {},
 
   mounted() {
-    fetch("http://localhost:3000/java")
+    fetch('http://localhost:3000/java')
       .then(response => response.json())
       .then(data => {
-        this.questions = data;
-      });
+        this.questions = data
+      })
   }
-};
+}
 </script>
 
 <style  scoped>
 </style>
-
