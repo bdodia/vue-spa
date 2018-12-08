@@ -10,7 +10,7 @@
 <script>
 export default {
   name: '',
-  data() {
+  data () {
     return {
       title: 'Java Questions',
       questions: []
@@ -19,7 +19,7 @@ export default {
 
   methods: {},
 
-  mounted() {
+  mounted () {
     fetch('http://localhost:3000/java')
       .then(response => response.json())
       .then(data => {
