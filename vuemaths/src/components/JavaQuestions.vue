@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{title}}</h1>
-    <li v-for="question in questions">
+    <li v-for="question in questions" :key="question.id">
       <div>{{question.category}}</div>
     </li>
   </div>

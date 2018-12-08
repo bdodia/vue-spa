@@ -1,41 +1,40 @@
 {
-    "java": [
-      {
-        "id": 1,
-        "category": "Data Types",
-        "question": "Name the 8 Java primitive types",
-        "answer": "..."
-      },
-      {
-        "id": 2,
-        "category": "Data Types",
-        "question": "How much data can be stored in an int type?",
-        "answer": "..."
-       
-      },
-      {
-        "id": 3,
-        "category": "Classes",
-        "question": "Define a skeleton class",
-        "answer": "..."
-      },
-      {
-        "id": 4,
-        "category": "Methods",
-        "question": "What is the signature for the main method in a class?",
-        "answer": "..."
-      },
-      {
-        "id": 5,
-        "category": "Interfaces",
-        "question": "Define what an Interface can be used for",
-        "answer": "..."
-      },
-      {
-        "id": 5,
-        "category": "Interfaces",
-        "question": "Define what an Interface can be used for",
-        "answer": "..."
-      }
-    ]
-  }
+  "java": [
+    {
+      "id": 1,
+      "category": "Data Types",
+      "question": "Name the 8 Java primitive types",
+      "answer": "..."
+    },
+    {
+      "id": 2,
+      "category": "Data Types",
+      "question": "How much data can be stored in an int type?",
+      "answer": "..."
+    },
+    {
+      "id": 3,
+      "category": "Classes",
+      "question": "Define a skeleton class",
+      "answer": "..."
+    },
+    {
+      "id": 4,
+      "category": "Methods",
+      "question": "What is the signature for the main method in a class?",
+      "answer": "..."
+    },
+    {
+      "id": 5,
+      "category": "Interfaces",
+      "question": "Define what an Interface can be used for?",
+      "answer": "..."
+    },
+    {
+      "id": 6,
+      "category": "Interfaces",
+      "question": "How many interfaces can be implemented by a class?",
+      "answer": "..."
+    }
+  ]
+}
