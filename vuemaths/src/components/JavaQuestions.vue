@@ -1,9 +1,13 @@
 <template>
   <div>
     <h1>{{title}}</h1>
-    <li v-for="question in questions" :key="question.id">
-      <div>{{question.category}}</div>
-    </li>
+    <select>
+      <option
+        v-for="question in questions"
+        :key="question.id"
+        value="question.id"
+      >{{question.question}}</option>
+    </select>
   </div>
 </template>
 
