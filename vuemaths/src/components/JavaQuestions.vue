@@ -2,16 +2,12 @@
 <div>
   <body>
     <section class="section">
-      <div class="container" @change="console.log($event)">
+      <div class="container">
         <h1 class="title">Java Quizzer</h1>
         <p class="subtitle">Challenge yourself with Java questions!</p>
         <div>
           <h1>{{title}}</h1>
-          <el-select
-            v-model="valueSelection"
-            placeholder="Select"
-            @change="$emit('change', 'something')"
-          >
+          <el-select v-model="value" placeholder="Select" @change="showPayload">
             <el-option
               v-for="question in questions"
               :key="question.id"
@@ -20,10 +16,10 @@
             ></el-option>
           </el-select>
         </div>
-
+        <br>
         <div class="columns">
           <div class="column is-narrow">
-            <div class="box" style="width: 200px;">
+            <div class="box" style="width: 800px;">
               <p class="title is-5">Selected Question .....</p>
               <p class="subtitle">Question text .....</p>
             </div>
@@ -42,7 +38,7 @@ export default {
     return {
       title: 'Pick a question',
       questions: [],
-      valueSelection: ''
+      value: ''
     }
   },
 
@@ -52,6 +48,9 @@ export default {
   methods: {
     idCategory: function (id, category) {
       return id + ' ' + category
+    },
+    showPayload: function (selected) {
+      console.log(this.value === selected, selected)
     }
   },
 
