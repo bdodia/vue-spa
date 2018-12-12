@@ -21,7 +21,7 @@
           <div class="column is-narrow">
             <div class="box" style="width: 800px;">
               <p class="title is-5">Selected Question .....</p>
-              <p class="subtitle">Question text .....</p>
+              <p class="subtitle" id="questionText">Question text .....</p>
             </div>
           </div>
         </div>
@@ -50,7 +50,8 @@ export default {
       return id + ' ' + category
     },
     showPayload: function (selected) {
-      console.log(this.value === selected, selected)
+      console.log(this.value === selected, selected, this.questions[selected - 1].question)
+      document.querySelector('#questionText').innerHTML = this.questions[selected - 1].question
     }
   },
 
